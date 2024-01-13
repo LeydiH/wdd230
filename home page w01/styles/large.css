@@ -1,0 +1,118 @@
+/* large.css */
+
+/* updated fonts from Google Fonts API */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333; 
+  color: white;
+  padding: 1em;
+  text-align: center;
+  height: 210px;
+  
+}
+
+/* hover effect */
+
+#menu li a:hover {
+  color: black;
+  text-shadow: 0 0 4px yellow;
+  background-color: bisque;
+}
+
+/* active page effect */
+#menu li a:active {
+  background-color: white;
+  color: black;
+}
+
+.active {
+  background-color: lightseagreen;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+#menu li a.active {
+  color: black;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+#Name {
+  font-size: xx-large;
+}
+
+nav {
+  background-color: #5e5f7b;
+  
+}
+
+nav ul {
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 8em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+}
+
+main {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto auto; 
+  gap: 1em; 
+}
+
+main hr {
+  border: 1px solid white;
+}
+
+.learning-header, .card {
+  
+  padding: 1em;
+  background-color: #8ea0ca;
+  border-radius: 10px; 
+  padding: 1em;
+}
+
+#la-Header {
+  color: black;
+  background-color: gray;
+}
+
+#wheatherHeader {
+  color: black;
+  background-color: gray;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
