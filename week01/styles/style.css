@@ -1,0 +1,129 @@
+/* style.css */
+
+/* Import Arial and Georgia fonts from Google Fonts API */
+@import url('https://fonts.googleapis.com/css?family=Arial|Georgia');
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  padding: 20px;
+  background-color: #0e3a67; /* Darker blue */
+}
+
+/* Header font color */
+header h1, header h2 {
+  color: white; /* White font color */
+}
+
+/* Header paragraph font color */
+header p {
+  color: #d9d7d7; /* Lighter gray font color */
+}
+
+
+
+/* Logo */
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Menu items */
+.menu li {
+  border-bottom: 1px #A68383
+}
+
+/* Menu links */
+.menu a {
+  display: block;
+  padding: 10px;
+  color: black; /* black font color */
+  text-decoration: none;
+}
+
+/* Menu links hover effect */
+.menu a:hover {
+  background-color: yellow; /* Yellow accent color */
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  background-color: #A68383; /* Dark gray background */
+}
+
+/* Main content font color */
+main p, main h2, main h3, main ul, main li {
+  color: black; /* White font color */
+}
+
+/* Persona */
+.persona {
+  display: flex;
+  align-items: center;
+}
+
+/* Persona image */
+.persona img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Persona details */
+.persona ul {
+  list-style: none;
+}
+
+/* Scenarios font color */
+.persona h4, persona li {
+   color: #eedb0d; /* Lighter gray font color */
+}
+
+/* Footer */
+footer {
+  padding: 10px;
+  background-color: rgb(63, 62, 62); /* Gray background */
+}
+
+/* Footer font color */
+footer {
+  color: white; /* White font color */
+}
+
+/* Media query for medium and large screens */
+@media (min-width:768px) {
+
+ /* Menu direction */
+ .menu {
+   flex-direction: row;
+ }
+
+ /* Menu items */
+ .menu li {
+   border-bottom: none;
+   border-right: 1px solid gray;
+ }
+
+ /* Persona direction */
+ .persona {
+   flex-direction: column;
+ }
+}
