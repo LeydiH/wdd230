@@ -3,6 +3,12 @@
 /* updated fonts from Google Fonts API */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+
+/* Hide Hamburger Menu in Desktop View */
+#hamburger-menu {
+  display: none;
+}
+
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin: 0;
@@ -115,4 +121,3 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
