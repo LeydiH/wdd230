@@ -1,0 +1,106 @@
+/* updated fonts from Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color: #A68383;
+  color: white;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#banner {
+  background-color: #034442;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  display: none;
+}
+
+/*Banner Styling */
+#banner h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+#banner p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0e3a67;  
+  /* Darker blue */
+}
+
+#menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+
+#menu li {
+  
+  padding: 10px;
+  margin: 0;
+
+}
+
+#menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu li a:hover {
+  color: yellow;
+  /* Change color on hover */
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin: 20px 10px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div {
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 150px;
+  background-color: #eee;
+  margin: 2vw;
+}
+
+section {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #eee;
+  margin: 2vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+div p {
+  margin-left: 2vw;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(45, 45, 45);
+  /* Gray background */
+  padding: 20px 0;
+}
+
+nav {
+  display: block;
+  background-color: #222963;
+  width: auto;
+}

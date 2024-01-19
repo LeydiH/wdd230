@@ -1,0 +1,120 @@
+/* Large screen styles */
+
+/* Menu Styles */
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#menu li {
+  margin: 0 15px;
+}
+
+#menu li a {
+  color: white;
+  text-decoration: none;
+  transition: font-size 0.2s, transform 0.2s;
+}
+
+#menu li a:hover {
+  color: black;
+  text-shadow: 0 0 4px yellow;
+}
+
+/* Hamburger Menu Styles */
+#menuBtn {
+  display: none; /* por si lo olvido este HIDE del menu del mcdonalds para pantallas grandes */
+}
+
+/* Hero Styles */
+.hero {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  height: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Section Styles */
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+.event {
+  grid-column: 1;
+  grid-row: 1;
+  color: antiquewhite;
+}
+
+.weather {
+  grid-column: 1;
+  grid-row: 2;
+  color: antiquewhite;
+}
+
+.join {
+  grid-column: 1;
+  grid-row: 3;
+  color: antiquewhite;
+}
+
+.news {
+  grid-column: 2;
+  grid-row: 3;
+  color: antiquewhite;
+}
+
+.spotlight1 {
+  grid-column: 3;
+  grid-row: 1;
+  color: antiquewhite;
+}
+
+.spotlight2 {
+  grid-column: 3;
+  grid-row: 2;
+  color: antiquewhite;
+}
+
+.spotlight3 {
+  grid-column: 3;
+  grid-row: 3;
+  color: antiquewhite;
+}
+
+.spotlight3 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.hero,
+.news,
+.event,
+.weather,
+.join,
+.spotlight1,
+.spotlight2,
+.spotlight3 {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: #43505d;
+  margin: 2vw;
+  box-shadow: 0 0 5px rgb(244, 248, 3);
+}
+
+div p {
+  margin-left: 20px;
+}
+
+/* Footer Styles */
+footer {
+  padding: 30px 0;
+}
