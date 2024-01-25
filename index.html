@@ -17,85 +17,91 @@
     <meta content="summary_large_image" name="twitter:card">
     <meta property="og:card" content="summary_large_image">
     <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/large.css" media="(min-width: 900px)" rel="stylesheet">
+    <link href="styles/larger.css" media="(min-width: 900px)" rel="stylesheet">
 </head>
 
 <body>
-    <div class="hamburger">
-        <div class="line menuIcon"></div>
-        <div class="line menuIcon"></div>
-        <div class="line menuIcon"></div>
-        <div class="line closeIcon"></div>
-        <div class="line closeIcon"></div>
-    </div>
-    <nav class="menu">
-        <!-- Menu items go here -->
-    </nav>
-
     <header>
-        <img alt="Logo" id="logo" src="images/leydi-cv.jpg">
-        <span id="Name">Leydi Hernandez</span>
-        <nav id="nav">
-            <ul id="menu">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="chamber/index.html">Chamber</a></li>
-                <li><a href="week01/chamber-site-plan.html">Site plan</a></li>
-                <li><a href="#">Form</a></li>
-            </ul>
-        </nav>
-        <!-- Hamburger Menu Placeholder -->
-        <div id="hamburger-menu">
-            <button id="hamburger-button">☰</button>
-            <!-- Menu items will be toggled here -->
+        <img src="images/me.jpg" alt="Leydi Hernandez Profle" width="100" height="150">
+        <h1>Leydi Hernandez</h1>
+        <span></span>
+
+        <div id="mode">
+            <button id="modeToggleBtn"><img src="images/mode.jpg" alt="mode pic" width="30" height="30"></button>
         </div>
-        <!-- Dark Mode Toggle Placeholder -->
-        <div id="dark-mode-toggle">
-            <button id="dark-mode-button">⚙️ Dark Mode</button>
-        </div>
+
     </header>
+    <a id="menu" href="#"></a>
+
+    <nav id="nav" class="hide">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
     <main>
-        <h1>WDD230 - Web Frontend Development</h1>
-        <hr>
-        <section>
-            <div class="learning-header">
-                <h2 id="la-Header">Learning activities</h2>
-                <ul id="weeks">
-                    <li>Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a> | 
-                        <a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/ZEPBJqX">JS Pen</a></li>
-                    <li>Week 02: <a href="week02/design.html">Design</a> | 
-                        <a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/KKEWoxr">Responsive Hamburger Menu</a> |
-                        <a href="week02/bom.html">DOM Manipulation</a>
-                    </li>
-                    <li>Week 03: <a href="week03/images/landscape.webp">WebP Image File</a> | 
-                        <a href="week03/lazyload.html">Lazy Load</a> | 
-                        <a href="week03/responsive-images.html">Responsive Images</a> </li> | 
-                        <a href="week03/bom.html">Web Storage API - localStorage</a>
-                    <li>Week 04: </li>
-                    <li>Week 05: </li>
-                    <li>Week 06: </li>
-                </ul>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(min-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 1000px)">   
+                <img src="images/hero-large.webp" loading="lazy" width="500" height="250" alt="hero photo">
+            </picture>
+            <div class="herolabel">
+                <p>Spain Temple</p>
             </div>
-        </section>
-        <section>
-            <div class="card">
-                <h2 id="wheatherHeader">Information</h2>
-                <div id="wheatherContent">
-                    <div id="wheatherInfo">
-                        <p id="wheatherCity">Toledo, Spain</p>
-                        <p id="wheatherTemp"> @ Temp</p>
-                        <p id="wheatherDesc">Page visits:</p>
-                    </div>
-                    <div id="wheatherIcon"></div>
+        </div>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <div class="content">
+            <section class="learning">
+                <h2 class="card">Learning Activities</h2>
+                <ul>
+                    <li><a href="#">Week 01:</a> <a href="week01/holygrail.html"> Holy Grail |</a><a
+                            href="week01/media-query.html"> Media Query | <a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/ZEPBJqX">JS Pen</a></li>
+                    <li><a href="#">Week 02:</a> <a href="week02/design.html"> Design |</a><a
+                            href="https://codepen.io/Leydi-Hernandez-Gadea/pen/KKEWoxr"> Menu |</a><a
+                            href="week02/bom.html"> BOM </a></li>
+                    <li><a href="#">Week 03:</a> <a href="week03/images/landscape.webp"> WebP | </a><a
+                            href="week03/lazyload.html"> Lazy | </a><a href="week03/responsive-images.html"> srcset |
+                        </a><a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/MWxOWOJ"> localStorage</a> </li>
+                    <li><a href="#">Week 04:</a></li>
+                    <li><a href="#">Week 05:</a></li>
+                    <li><a href="#">Week 06:</a></li>
+                </ul>
+            </section>
+            <section class="information">
+                <h2 class="card">Information</h2>
+                <p> Weather: <span id="weather"></span></p>
+                <p> Page Visits: <span id="visits"></span></p>
+            </section>
+        </div>
+
+    </main>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.5172019925075!2d-4.02263408460714!3d39.86283167944319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6b4f1d3a0f74ef%3A0xf7b8356ec8c7073a!2sToledo%2C+Spain!5e0!3m2!1sen!2sus!4v1614791663989!5m2!1sen!2sus"
+        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer>
+        <div class="footer">
+            <div class="footer_info">
+                <p>©2024</p>
+                <p>Leydi Hernandez</p>
+                <div class="country">
+                    <p>Toledo, Spain</p>
+                    <img src="images/spain-flag.png" alt="" width="40" height="40">
                 </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p id="footerText"></p>
-        <p id="lastModified"></p>
+            <p>Last modification: <span id='lastModified'></span></p>
+        </div>
+
     </footer>
-    <script src="scripts/scripts.js"></script>
-    <script src="scripts/getDates.js"></script>
+
+    <script src='scripts/getDates.js'></script>
+
 </body>
+
 
 </html>

@@ -1,136 +1,282 @@
-/* base.css */
-
-/* updated fonts from Google Fonts API */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-/* Hamburger Menu Styles */
-.hamburger {
-  display: none; /* Hidden by default, shown in mobile view */
-  cursor: pointer;
+
+header img {
+    border-radius: 100px;
 }
 
-.hamburger .line {
-  width: 30px;
-  height: 3px;
-  background-color: black;
-  margin: 5px 0;
+header>main {
+    max-width: 767px;
+    margin: 0 auto;
+    column-gap: 30px;
 }
 
-.closeIcon {
-  display: none;
+header>h1 {
+    font-size: 2.5rem;
+
 }
 
-.menu {
-  display: none; /* Hidden by default, shown when .showMenu is added */
+h1 {
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
-/* Show hamburger icon in mobile view */
-@media (max-width: 600px) {
-  .hamburger {
-      display: block;
-  }
+header,
+footer,
+nav {
+    background-color: #959393;
 }
 
-/* Styles when the menu is visible */
-.showMenu {
-  display: block;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Dark mode styles */
-.dark-mode {
-  background-color: #333;
-  color: white;
-}
-
-
-body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
 header {
-  background-color: #333; /* Color oscuro para el fondo */
-  color: white;
-  padding: 1em;
-  text-align: center;
+    background-color: #959393; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
-/* hover effect */
-
-#menu li a:hover {
-  color: black;
-  text-shadow: 0 0 4px yellow;
-  background-color: bisque;
+.main h1 {
+    margin: 1rem 2vw;
 }
 
-/* active page effect */
-#menu li a:active {
-  background-color: white;
-  color: black;
+.main h1 section {
+    border: 1px #142f14;
+    background-color: #edf2f4;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+
 }
 
-.active {
-  background-color: lightseagreen;
-  font-weight: bolder;
-  font-size: larger;
+.hero {
+    margin: 0px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+    width: 100%;
+
 }
 
-#menu li a.active {
-  color: black;
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-#logo {
-  width: 100px;
-  height: auto;
-  border-radius: 50%; /* Hace que la imagen sea circular */
+.herolabel {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background: radial-gradient(#fff, #2b2d42);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
 }
 
-#siteName {
-  margin: 0;
-  padding: 0.5em 0;
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-family: "Roboto mono", monospace;
 }
+
 
 nav {
-  background-color: #5e5f7b; /* Color más claro para la barra de navegación */
+    background-color: #2b2d42;
+    margin: 0 auto;
 }
 
 nav ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
+    list-style-type: none;
 }
 
-nav ul li {
-  margin: 0.5em 0;
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: larger;
+nav a:hover,
+nav a:active {
+    background-color: #8d99ae;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr; /* Distribución de dos columnas */
-  gap: 1em; /* Espacio entre las columnas */
-  padding: 1em;
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+
 }
 
-.learning-header, .card {
-  background-color: #e9e9e9; /* Color claro para el fondo de las tarjetas */
-  border-radius: 10px; /* Bordes redondeados para las tarjetas */
-  padding: 1em;
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    cursor: pointer;
+    background-color: #eee;
+    color: #000;
+    padding: .25rem 2vw;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+.hide {
+    display: none;
+    font-size: larger;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+ul .active .show {
+    display: block;
+}
+
+#menu.show::before {
+    content: "Cls";
+}
+
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #fff;
+    color: #333;
+
+}
+
+#modeToggleBtn {
+    border: none;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.learning {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+
+
+}
+
+.learning>.card {
+    text-align: center;
+    padding: 12px;
+    background-color: #2b2d42;
+    color: white;
+}
+
+.learning>ul {
+    margin: 12px;
+}
+
+.learning>ul {
+    margin: 12px;
+}
+
+.learning>ul>li {
+    margin-left: 16px;
+    margin-bottom: 8px;
+    list-style-type: none;
+}
+
+.information {
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-bottom: 10px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+
+}
+
+.information>.card {
+    text-align: center;
+    padding: 12px;
+    background-color: #2b2d42;
+    color: white;
+}
+
+.information>p {
+    margin-left: 16px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.information>.p {
+    margin-left: 50px;
+    margin-bottom: 5px;
+    list-style-type: none;
+    text-align: center;
+    margin: auto;
+}
+
+
+#visits {
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+iframe {
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.footer {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+    margin: 12px;
+}
+
+.footer_info>p {
+    margin-bottom: 5px;
+}
+
+.country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
 }
