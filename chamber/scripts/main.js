@@ -2,7 +2,7 @@
 document.getElementById('date').innerText = new Date().toDateString();
 
 // Display copyright year and last modification date
-document.getElementById('footerText').innerText = `Copyright ${new Date().getFullYear()} The Mountain Chamber - WDD 230 Project - Leydi Hernandez - Last Modified: ${document.lastModified}`;
+document.getElementById('footerText').innerText = `Copyright ${new Date().getFullYear()} Chamber of Commerce - WDD 230 Project - Leydi Hernandez - Last Modified: ${document.lastModified}`;
 
 // Toggle the navigation menu
 document.getElementById('menuBtn').addEventListener('click', function() {

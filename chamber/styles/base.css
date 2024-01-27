@@ -1,10 +1,34 @@
 /* updated fonts from Google Fonts API */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #091049;
+  /* Darker blue */
+}
+
+nav {
+  display: block;
+  background-color: #222963;
+  width: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin: 20px 10px;
+  overflow: auto;
+}
 
 body {
-  background-color: #A68383;
+  background-color: #38424d;
   color: white;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 #banner {
@@ -13,6 +37,7 @@ body {
   text-align: center;
   padding: 10px;
   display: none;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 /*Banner Styling */
@@ -24,14 +49,7 @@ body {
 #banner p {
   font-size: 1.5em;
   margin: 0;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #0e3a67;  
-  /* Darker blue */
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 #menu {
@@ -41,10 +59,8 @@ header {
 }
 
 #menu li {
-  
   padding: 10px;
   margin: 0;
-
 }
 
 #menu li a {
@@ -52,23 +68,85 @@ header {
   text-decoration: none;
 }
 
-#menu li a:hover {
-  color: yellow;
-  /* Change color on hover */
-  font-weight: bold;
+/* Discover page styles start */
+
+.city-visit-info {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  grid-gap: 1px;
+  height: 285px;
+  width: auto;
+  gap: 1px;
+  align-items: center;
+  color: antiquewhite;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: #43505d;
+  margin: 2vw;
+  box-shadow: 0 0 5px rgb(244, 248, 3);
 }
 
-main {
+.visit {
+  height: 100%;
+  width: auto;
+  color: antiquewhite;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: #43505d;
+  margin: 2vw;
+  box-shadow: 0 0 5px rgb(244, 248, 3);
+}
+
+#visitTime {
+  color: antiquewhite;
+  background-color: #43505d;
+  border: transparent;
+  width: 80%;
+  height: 285px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.gallery {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: stretch;
+  background-color: #43505d;
+  border: 1px solid #43505d;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
-  margin: 20px 10px;
+  justify-content: center;
+  color: antiquewhite;
+  position: relative;
+  background-color: #43505d;
 }
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Discover page styles ends */
 
 .hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Hero Styles */
+.hero {
+  grid-column: 1 / span 2;
+  height: 100%;
 }
 
 div {
@@ -92,15 +170,60 @@ div p {
   margin-left: 2vw;
 }
 
+.weather p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: antiquewhite;
+}
+
+
+
+#windChill {
+  font-weight: bold;
+  color: red;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+/*.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5em;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity
+}
+*/
+
+.hero,
+.news,
+.event,
+.weather,
+.join,
+.spotlight1,
+.spotlight2,
+.spotlight3 {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: #43505d;
+  margin: 2vw;
+  box-shadow: 0 0 5px rgb(244, 248, 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
 footer {
   text-align: center;
   background-color: rgb(45, 45, 45);
   /* Gray background */
   padding: 20px 0;
-}
-
-nav {
-  display: block;
-  background-color: #222963;
-  width: auto;
 }

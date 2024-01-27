@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta name="description" content="Chamber Home Page">
+    <meta name="author" content="Leydi Hernandez">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 900px)" >
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.webp" alt="Logo" id="logo" >
+      <h1 id="siteName">Chamber of Commerce</h1>
+      <nav id="nav">
+        <button id="menuBtn">&#9776;</button>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li>
+            <a href="#"><img src="images/facebook.webp" alt="Facebook" ></a>
+            <!-- Converted Facebook icon to WebP format -->
+          </li>
+          <li>
+            <a href="#"><img src="images/LI-In-Bug.webp" alt="Linkedin" ></a>
+            <!-- Converted LinkedIn icon to WebP format -->
+          </li>
+        </ul>
+      </nav>
+      <p id="date"></p>
+    </header>
+    <main>
+      <div class="city-visit-info">
+        <h2>Welcome to Toledo, Spain!</h2>
+        <p>Its historic center was declared a World Heritage Site in 1986.</p>
+        <p>Population: 87,070 inhabitants.</p>
+        <p>Area: 232,10 km²</p>
+        <p>Elevation: 516 m above sea level.</p>
+      </div>
+      <div class="visit">
+        <h2>Your visits</h2>
+        <div id="visitTime"></div>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img
+            class="lazy-load"
+            src="images/img1.jpg"
+            data-src="images/img1.jpg"
+            alt="Image 1"
+          >
+          <p>Toledo Historic Center</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            class="lazy-load"
+            src="images/img2.jpg"
+            data-src="images/image02.jpg"
+            alt="Image 2"
+          >
+          <p>Toledo Historic Center</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            class="lazy-load"
+            src="images/img3.jpg"
+            data-src="images/image03.jpg"
+            alt="Image 3"
+          >
+          <p>Toledo Historic Center</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            class="lazy-load"
+            src="images/img4.jpg"
+            data-src="images/image04.jpg"
+            alt="Image 4"
+          >
+          <p>Toledo Historic Center</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            class="lazy-load"
+            src="images/img5.jpg"
+            data-src="images/image05.jpg"
+            alt="Image 5"
+          >
+          <p>Toledo Historic Center</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            class="lazy-load"
+            src="images/img6.jpg"
+            data-src="images/image06.jpg"
+            alt="Image 6"
+          >
+          <p>Toledo Historic Center</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img src="images/small-logo2.webp" alt="small-Logo" id="small-logo" >
+      <!-- Converted small logo to WebP format -->
+      <h2>Chamber of Commerce</h2>
+      <p>Some place in Toledo, Spain</p>
+      <p>Toledo, Spain</p>
+      <p>info@chamberofcommerce.com</p>
+      <p>+34 555 849021</p>
+      <p>© 2024 Leydi Hernandez. Toledo, Spain.</p>
+      <p id="lastModified"></p>
+      <p id="footerText"></p>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/visitTime.js"></script>
+  </body>
+</html>
