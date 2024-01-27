@@ -217,3 +217,227 @@ div p {
 footer {
   padding: 30px 0;
 }
+
+/* Media Query para pantallas con un ancho mínimo de 900px */
+@media screen and (min-width: 900px) {
+/* Large screen styles */
+
+/* Section Styles */
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 5px;
+  height: 100vh;
+  padding: 5px;
+  background-color: #43505d;
+  overflow: auto;
+}
+
+/* Menu Styles */
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#menu li {
+  margin: 0 15px;
+}
+
+#menu li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: font-size 0.2s, transform 0.2s;
+}
+
+#menu li a:hover {
+  color: black;
+  text-shadow: 0 0 4px yellow;
+}
+
+/* Hamburger Menu Styles */
+#menuBtn {
+  display: none;
+}
+
+/* Discover page styles start */
+
+.city-visit-info {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1px;
+  height: 300px;
+  width: 80%;
+  gap: 1px;
+  align-items: center;
+  color: antiquewhite;
+}
+
+.gallery {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  background-color: #43505d;
+  border: #43505d;
+}
+
+.visit {
+  padding: 10px;
+  grid-column: 3;
+  grid-row: 1;
+  height: 300px;
+  width: 80%;
+  color: antiquewhite;
+}
+
+#visitTime {
+  color: antiquewhite;
+  background-color: #43505d;
+  border: transparent;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  color: antiquewhite;
+  position: relative;
+}
+
+.gallery-item:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    245,
+    233,
+    71,
+    0.284
+  );
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Discover page styles ends */
+
+/* Hero Styles */
+.hero {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  height: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event {
+  grid-column: 1;
+  grid-row: 1;
+  color: antiquewhite;
+}
+
+.weather {
+  grid-column: 1;
+  grid-row: 2;
+  color: antiquewhite;
+}
+
+.weather p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: antiquewhite;
+}
+
+.join {
+  grid-column: 1;
+  grid-row: 3;
+  color: antiquewhite;
+}
+
+.news {
+  grid-column: 2;
+  grid-row: 3;
+  color: antiquewhite;
+}
+
+.spotlight1 {
+  grid-column: 3;
+  grid-row: 1;
+  color: antiquewhite;
+}
+
+.spotlight2 {
+  grid-column: 3;
+  grid-row: 2;
+  color: antiquewhite;
+}
+
+.spotlight3 {
+  grid-column: 3;
+  grid-row: 3;
+  color: antiquewhite;
+}
+
+.spotlight3 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.city-visit-info,
+.visit,
+.gallery-item,
+.hero,
+.news,
+.event,
+.weather,
+.join,
+.spotlight1,
+.spotlight2,
+.spotlight3 {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: #43505d;
+  margin: 2vw;
+  box-shadow: 0 0 5px rgb(244, 248, 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div p {
+  margin-left: 20px;
+}
+
+/* Footer Styles */
+footer {
+  padding: 30px 0;
+}
+
+}
