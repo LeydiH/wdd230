@@ -31,6 +31,20 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+.lazy-load {
+  width: 400px;
+  height: auto;
+  background: black;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadein 10s forwards;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 #banner {
   background-color: #034442;
   color: white;
