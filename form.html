@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leydi Hernandez - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Leydi Hernandez - course assignment portal">
+    <meta name="author" content="Leydi Hernandez">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Home page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://leydih.github.io/wdd230/images/leydi-cv.jpg">
+    <meta property="og:url" content="https://leydih.github.io/wdd230/">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta property="og:card" content="summary_large_image">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" media="(min-width: 900px)" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/me.jpg" alt="Leydi Hernandez Profle" width="100" height="150">
+        <h1>Leydi Hernandez</h1>
+        <span></span>
+
+        <div id="mode">
+            <button id="modeToggleBtn"><img src="images/mode.jpg" alt="mode pic" width="30" height="30"></button>
+        </div>
+
+    </header>
+    <a id="menu" href="#"></a>
+
+    <nav id="nav" class="hide">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Form Submission</h2>
+
+        <form method="get" action="record.html">
+            <div id="legend">Information</div>
+            <div id="formMessage"></div>
+            <label class="top">Username* <input type="text" id="username" name="username" required></label>
+            <label class="top">Password* <input type="password" id="pwd" name="pwd" required pattern="[A-Za-z0-9]{8,}"
+                    placeholder="Alpha numeric only"></label>
+            <label class="top">Confirm Password* <input type="password" id="conPwd" name="conPwd" required
+                    pattern="[A-Za-z0-9]{8,}"></label>
+            <label class="top">Email* <input type="email" id="mail" name="mail" required
+                    pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" placeholder="Please enter a valid email address"></label>
+
+            <label class="top">Page Rating<br>
+                <span id="rangevalue">0</span>
+                <input type="range" name="r" id="r" min="0" max="10" value="0" step="1" list="rangevalues">
+            </label>
+
+            <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+
+
+            <input type="submit" value="Rate the page" id="submitBtn">
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer_info">
+                <p>©2024</p>
+                <p>Leydi Hernandez</p>
+                <div class="country">
+                    <p>Toledo, Spain</p>
+                    <img src="images/spain-flag.png" alt="" width="40" height="40">
+                </div>
+            </div>
+            <p>Last modification: <span id='lastModified'></span></p>
+        </div>
+
+    </footer>
+
+    <script src='scripts/form.js'></script>
+    <script src='scripts/getDates.js'></script>
+
+</body>
+
+
+</html>
+       
