@@ -1,3 +1,6 @@
+/* updated fonts from Google Fonts API */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 
 /* Media Query para pantallas con un ancho mínimo de 900px */
 @media screen and (min-width: 900px) {
