@@ -234,6 +234,61 @@ div p {
   flex-direction: column;
 }
 
+/* Join page styles start */
+
+form {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: blue;
+    color: antiquewhite;
+    padding: 10px;
+    border: none;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: lightgrey;
+}
+
+/* Join page styles end */
+
+/* thankyou page styles start */
+
+.Thanks-join {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+  
+}
+
+.Thanks-join p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(193, 39, 39);
+  
+}
+
+/* thankyou page styles end */
 
 footer {
   text-align: center;
