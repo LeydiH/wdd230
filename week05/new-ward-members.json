@@ -1,0 +1,19 @@
+{
+    "familyName" : "Vanegas Family",
+    "movedIn" : "November 13th 2019",
+    "meminfamily" : 2,
+    "numofvisit" : 2,
+    "members" : [
+      {
+        "name" : "Cesar",
+        "gender" : "male",
+        "birthdate" : "March 22th 1986" 
+    },
+      {
+        "name" : "Mariana",
+        "gender" : "female",
+        "birthdate" : "April 28th 1993"
+    
+      }
+    ]
+  }
