@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce</title>
-    <meta name="description" content="Chamber Home Page">
+    <meta name="description" content="Directory Home Page">
     <meta name="author" content="Leydi Hernandez">
     <link rel="icon" href="images/favicon.ico">
     <meta property="og:title" content="Home page">
@@ -27,7 +27,7 @@
         <ul id="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
-          <li><a href="directory.html">Directory</a></li>
+          <li><a href="index.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
           <li>
             <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
@@ -40,42 +40,25 @@
       <p id="date"></p>
     </header>
     <main>
-      <div class="event">
-        <h2>Upcoming Event</h2>
-        <p>Details about the upcoming event...</p>
-      </div>
-      <div class="hero">
-        <picture>
-          <source media="(max-width: 599px)" srcset="images/.jpg" />
-          <source media="(max-width: 899px)" srcset="images/.jpg" />
-          <source media="(min-width: 900px)" srcset="images/.jpg" />
-          <img src="images/wdd230-org.jpg" alt="Hero" />
-        </picture>
-      </div>
-      <div class="join"><h2>Join</h2></div>
-
-      <div class="weather"><h2>Weather</h2></div>
-      <div class="news"><h2>News Release</h2></div>
-      <div class="spotlight1">
-        <h2>Spotlight1</h2>
-      </div>
-      <div class="spotlight2">
-        <h2>Spotlight2</h2>
-      </div>
-      <div class="spotlight3">
-        <h2>Spotlight3</h2>
-      </div>
-    </main>
+        <h2 id="directory-title">Business Directory</h2>
+        <button id="switchViewBtn">Switch to List View</button>
+        <section id="directory" class="directory grid">
+              <!-- Directory cards or list items will go here -->
+          </section>
+    </main>   
     <footer>
-      <img src="images/small-logo.png" alt="small-Logo" id="small-logo">
+      <img src="images/small-logo2.webp" alt="small-Logo" id="small-logo" >
+      <!-- Converted small logo to WebP format -->
       <h2>Chamber of Commerce</h2>
       <p>Some place in Toledo, Spain</p>
-      <p>info@thechambercommerce.com</p>
+      <p>info@chamberofcommerce.com</p>
       <p>+34 555 849021</p>
       <p>© 2024 Leydi Hernandez. Toledo, Spain.</p>
       <p id="lastModified"></p>
       <p id="footerText"></p>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/visitTime.js"></script>
+    <script src="scripts/directory-json.js"></script>
   </body>
 </html>
