@@ -57,25 +57,50 @@
             <section class="learning">
                 <h2 class="card">Learning Activities</h2>
                 <ul>
-                    <li><a href="#">Week 01:</a> <a href="week01/holygrail.html"> Holy Grail |</a><a
-                            href="week01/media-query.html"> Media Query | <a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/ZEPBJqX">JS Pen</a></li>
-                    <li><a href="#">Week 02:</a> <a href="week02/design.html"> Design |</a><a
-                            href="https://codepen.io/Leydi-Hernandez-Gadea/pen/KKEWoxr"> Menu |</a><a
-                            href="week02/bom.html"> BOM </a></li>
-                    <li><a href="#">Week 03:</a> <a href="week03/images/landscape.webp"> WebP | </a><a
-                            href="week03/lazyload.html"> Lazy | </a><a href="week03/responsive-images.html"> srcset |
-                        </a><a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/MWxOWOJ"> localStorage</a> </li>
-                    <li><a href="#">Week 04:</a> <a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/qBvoWWL">CSS Pseudo-classes | 
-                        <a href="week04/images/exercises.png"> CSS Combinators |  <a href="week04/tablebuild.html"> HTML Table |
-                        <a href="week04/form-start/index.html"> HTML Forms </a></li>
-                    <li><a href="#">Week 05:</a> <a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/QWoVyRY">CSS Pseudo-elements |</a>
-                       <a href="week05/new-ward-members.json"> JSON |</a> <a href="week05/prophets.html"> Fetch API - Prophets |</a><a href="week05/weather.html"> Weather API |</a></li>
+                    <li>
+                        <a href="#">Week 01:</a> 
+                        <a href="week01/holygrail.html">Holy Grail |</a>
+                        <a href="week01/media-query.html">Media Query |</a> 
+                        <a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/ZEPBJqX">JS Pen</a>
+                    </li>
+                    <li>
+                        <a href="#">Week 02:</a> 
+                        <a href="week02/design.html">Design |</a>
+                        <a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/KKEWoxr">Menu |</a>
+                        <a href="week02/bom.html">BOM</a>
+                    </li>
+                    <li>
+                        <a href="#">Week 03:</a> 
+                        <a href="week03/images/landscape.webp">WebP |</a>
+                        <a href="week03/lazyload.html">Lazy |</a>
+                        <a href="week03/responsive-images.html">srcset |</a>
+                        <a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/MWxOWOJ">localStorage</a>
+                    </li>
+                    <li>
+                        <a href="#">Week 04:</a> 
+                        <a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/qBvoWWL">CSS Pseudo-classes |</a> 
+                        <a href="week04/images/exercises.png">CSS Combinators |</a>  
+                        <a href="week04/tablebuild.html">HTML Table |</a>
+                        <a href="week04/form-start/index.html">HTML Forms</a>
+                    </li>
+                    <li>
+                        <a href="#">Week 05:</a> 
+                        <a href="https://codepen.io/Leydi-Hernandez-Gadea/pen/QWoVyRY">CSS Pseudo-elements |</a>
+                        <a href="week05/new-ward-members.json">JSON |</a> 
+                        <a href="week05/prophets.html">Fetch API - Prophets |</a>
+                        <a href="week05/weather.html">Weather API |</a>
+                    </li>
                     <li><a href="#">Week 06:</a></li>
                 </ul>
             </section>
+            
             <section class="information">
                 <h2 class="card">Information</h2>
-                <p> Weather: <span id="weather"></span></p>
+                <p> <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="#" alt="desc">
+                    <figcaption></figcaption>
+                </figure>
                 <p> Page Visits: <span id="visits"></span></p>
             </section>
         </div>
@@ -103,6 +128,7 @@
     </footer>
 
     <script src='scripts/getDates.js'></script>
+    <script src="scripts/links.js"></script>
 
 </body>
 

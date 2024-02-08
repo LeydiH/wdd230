@@ -211,7 +211,7 @@ ul .active .show {
     border: 1px solid gray;
     border-radius: 3px;
     margin-bottom: 10px;
-
+    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -232,14 +232,6 @@ ul .active .show {
     margin-top: 20px;
     list-style-type: none;
     text-align: center;
-}
-
-.information>.p {
-    margin-left: 50px;
-    margin-bottom: 5px;
-    list-style-type: none;
-    text-align: center;
-    margin: auto;
 }
 
 

@@ -1,0 +1,101 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Holy Grail"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/Leydi-Hernandez-Gadea/pen/ZEPBJqX",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "https://codepen.io/Leydi-Hernandez-Gadea/pen/KKEWoxr",
+                    "title": "Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "BOM"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "srcset"
+                },
+                {
+                    "url": "https://codepen.io/Leydi-Hernandez-Gadea/pen/MWxOWOJ",
+                    "title": "localStorage"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/Leydi-Hernandez-Gadea/pen/qBvoWWL",
+                    "title": "CSS Pseudo-classes"
+                },
+                {
+                    "url": "week04/images/exercises.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "HTML Table"
+                },
+                {
+                    "url": "week04/form-start/index.html",
+                    "title": "HTML Forms"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/Leydi-Hernandez-Gadea/pen/QWoVyRY",
+                    "title": "CSS Pseudo-elements "
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Fetch API - Prophets"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather API"
+                }
+            ]
+        }
+    ]
+}
