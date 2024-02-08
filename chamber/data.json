@@ -1,0 +1,84 @@
+{
+    "companies": [
+        {
+            "name": "Google",
+            "address": "123 Main St",
+            "phone": "(123) 456-7890",
+            "website": "https://www.google.com/",
+            "icon": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+            "membership": "gold"
+        },
+
+        {
+            "name": "Apple",
+            "address": "123 Main St",
+            "phone": "(123) 456-7890",
+            "website": "https://www.apple.com/",
+            "icon": "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?201703170823",
+            "membership": "gold"
+        },
+
+        {
+            "name": "Microsoft",
+            "address": "123 Main St",
+            "phone": "(123) 456-7890",
+            "website": "https://www.microsoft.com/",
+            "icon": "https://www.microsoft.com/favicon.ico",
+            "membership": "gold"
+        },
+
+        {
+            "name": "Amazon",
+            "address": "123 Main St",
+            "phone": "(123) 456-7890",
+            "website": "https://www.amazon.com/",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+            "membership": "gold"
+        },
+
+        {
+            "name": "Facebook",
+            "address": "123 Main St",
+            "phone": "(123) 456-7890",
+            "website": "https://www.facebook.com/",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/1920px-Facebook_Logo_%282019%29.svg.png",
+            "membership": "gold"
+        },
+
+        {
+            "name": "IBM",
+            "address": "123 Main St",
+            "phone": "(123) 456-7890",
+            "website": "https://www.ibm.com/",
+            "icon": "https://www.ibm.com/brand/experience-guides/developer/8f4e3cc2b5d52354a6d43c8edba1e3c9/02_8-bar-reverse.svg",
+            "membership": "gold"
+        },
+
+        {
+            "name": "Oracle",
+            "address": "123 Main St",
+            "phone": "(123) 456-7890",
+            "website": "https://www.oracle.com/",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
+            "membership": "gold"
+        },
+
+        {
+            "name": "Intel",
+            "address": "123 Main St",
+            "phone": "(123) 456-7890",
+            "website": "https://www.intel.com/",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/8/85/Intel_logo_2023.svg",
+            "membership": "gold"
+        },
+
+        {
+            "name": "Cisco",
+            "address": "123 Main St",
+            "phone": "(123) 456-7890",
+            "website": "https://www.cisco.com/",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg",
+            "membership": "gold"
+        }
+    ]
+}
