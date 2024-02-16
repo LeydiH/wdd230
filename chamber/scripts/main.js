@@ -20,11 +20,12 @@ document.getElementById('menuBtn').addEventListener('click', function() {
 let currentDate = new Date();
 let currentDay = currentDate.getDay(); // getDay() returns a number between 0 (Sunday) and 6 (Saturday)
 
-if (currentDay === 1 || currentDay === 2) { // 1 is Monday, 2 is Tuesday
+if (currentDay === 1 || currentDay === 2 || currentDay === 3) { // 1 is Monday, 2 is Tuesday, 3 is Wednesday
     document.getElementById('banner').style.display = "block"; // display banner
 } else {
     document.getElementById('banner').style.display = "none"; // hide banner
 }
+
 
 // companies.json
 
