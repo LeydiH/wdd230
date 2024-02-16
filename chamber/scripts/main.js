@@ -35,7 +35,7 @@ function shuffleArray(array) {
     }
 }
 
-fetch('https://raw.githubusercontent.com/LeydiH/wdd230/main/chamber/data/companies.json')
+fetch('data/companies.json')
     .then(response => response.json())
     .then(data => {
         shuffleArray(data.companies);
