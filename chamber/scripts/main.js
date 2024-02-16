@@ -9,14 +9,14 @@ document.getElementById('footerText').innerText = `Copyright ${new Date().getFul
 // Toggle the navigation menu
 document.getElementById('menuBtn').addEventListener('click', function() {
     let menu = document.getElementById('menu');
-    if (menu.style.display === 'none') {
+    if (menu.style.display === 'none' || menu.style.display === '') {
         menu.style.display = 'block';
     } else {
         menu.style.display = 'none';
     }
 });
 
-// Display banner on Mondays and Tuesdays
+// Display banner on Mondays, Tuesdays, and Wednesdays
 let currentDate = new Date();
 let currentDay = currentDate.getDay(); // getDay() returns a number between 0 (Sunday) and 6 (Saturday)
 
@@ -26,9 +26,6 @@ if (currentDay === 1 || currentDay === 2 || currentDay === 3) { // 1 is Monday, 
     document.getElementById('banner').style.display = "none"; // hide banner
 }
 
-
-// companies.json
-
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -36,7 +33,7 @@ function shuffleArray(array) {
     }
 }
 
-fetch('data/companies.json')
+fetch(url)
     .then(response => response.json())
     .then(data => {
         shuffleArray(data.companies);
@@ -52,7 +49,3 @@ fetch('data/companies.json')
     .catch((error) => {
         console.error('Error:', error);
     });
-
-
-// companies.json END
-
