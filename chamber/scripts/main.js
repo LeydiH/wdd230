@@ -1,3 +1,5 @@
+const url = 'https://raw.githubusercontent.com/LeydiH/wdd230/main/chamber/data/companies.json'; 
+
 // Display current date
 document.getElementById('date').innerText = new Date().toDateString();
 

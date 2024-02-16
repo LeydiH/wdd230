@@ -1,6 +1,6 @@
-const url = 'https://raw.githubusercontent.com/LeydiH/wdd230/main/chamber/members.json'; // Path for online data.json file
+const url = 'https://raw.githubusercontent.com/LeydiH/wdd230/main/chamber/data/members.json'; // Path for online members.json file
 
-// LOCAL JSON FOR TESTING: const url = 'data.json';
+// LOCAL JSON FOR TESTING: const url = 'members.json';
 
 async function getCompanyData() {
     const response = await fetch(url);
