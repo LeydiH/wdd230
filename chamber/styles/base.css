@@ -4,47 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #091049;
-  /* Darker blue */
-}
-
-nav {
-  display: block;
-  background-color: #222963;
-  width: auto;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  margin: 20px 10px;
-  overflow: auto;
-}
-
 body {
   background-color: #38424d;
   color: white;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-
-.lazy-load {
-  width: 400px;
-  height: auto;
-  background: black;
-  display: block;
-  margin: 0 auto;
-  opacity: 0;
-  animation: fadein 10s forwards;
-}
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
 }
 
 #banner {
@@ -68,6 +31,14 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1f4d;
+  /* Darker blue */
+}
+
 #menu {
   display: none;
   list-style: none;
@@ -82,6 +53,58 @@ body {
 #menu li a {
   color: white;
   text-decoration: none;
+}
+
+#menu li a:hover {
+  color: black;
+  text-shadow: 0 0 4px yellow;
+}
+
+/* active page effect */
+#menu li a:active {
+  background-color: white;
+  color: black;
+}
+
+.active {
+  background-color: lightseagreen;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+#menu li a.active {
+  color: black;
+}
+
+/* spotlights images sizes */
+
+.spotlight1 img {
+  width: 35%;
+  height: 35%;
+  object-fit: fill;
+}
+
+.spotlight2 img {
+  width: 25%;
+  height: 25%;
+  object-fit: fill;
+}
+
+.spotlight3 img {
+  width: 25%;
+  height: 25%;
+  object-fit: fill;
+}
+/* spotlights images sizes end */
+
+/* active page effect end */
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin: 20px 10px;
+  overflow: auto;
 }
 
 /* Discover page styles start */
@@ -120,7 +143,6 @@ body {
   width: 80%;
   height: 285px;
   display: flex;
-  justify-content: left;
   align-items: center;
   margin-top: -50px;
 }
@@ -186,16 +208,61 @@ div p {
   margin-left: 2vw;
 }
 
+.weather {
+  height: auto;
+  width: auto;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
 .weather p {
   margin: 0;
   padding: 0;
+  font-size: 0.85rem;
   text-align: center;
-  font-size: 1em;
   font-weight: bold;
+  color: black;
+}
+
+.join a {
   color: antiquewhite;
 }
 
+.spotlight1, .spotlight2, .spotlight3 {
+  color: antiquewhite;
+}
 
+.spotlight1 a, .spotlight2 a, .spotlight3 a {
+  color: antiquewhite;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(45, 45, 45);
+  /* Gray background */
+  padding: 20px 0;
+}
+
+nav {
+  display: block;
+  background-color: #222963;
+  width: auto;
+}
 
 #windChill {
   font-weight: bold;
@@ -203,6 +270,19 @@ div p {
   text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5em;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+}
 
 .hero,
 .news,
@@ -212,6 +292,7 @@ div p {
 .spotlight1,
 .spotlight2,
 .spotlight3 {
+  text-align: center;
   border: 2px solid rgba(0, 0, 0, 0.3);
   background-color: #43505d;
   margin: 2vw;
@@ -220,6 +301,7 @@ div p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: fit-content;
 }
 
 /* Join page styles start */
@@ -345,12 +427,96 @@ input, textarea, select {
   color:lightblue;
 }
 
-/* directory page styles end */
+/* contact page styles start */
 
-
-footer {
-  text-align: center;
-  background-color: rgb(45, 45, 45);
-  /* Gray background */
-  padding: 20px 0;
+#mainContactSectionPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  color: black;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: #43505d;
+  box-shadow: 0 0 5px rgb(244, 248, 3);
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  align-content: flex-start;
 }
+
+#googleMap {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: fit-content;
+  
+}
+
+#visitUs {
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: darkgrey;
+}
+
+#contactSection {
+  grid-column: 1;
+  grid-row: 3;
+  align-content: flex-start;
+  border: #43505d;
+  background-color: #43505d;
+  color: antiquewhite;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contactForm {
+  gap: 5px; 
+  padding-top: 1px;
+  padding-bottom: 10px;
+  height: 100%;
+}
+
+
+
+
+form {
+  display: grid;
+  flex-direction: column;
+  gap: 0;
+}
+
+input,
+textarea {
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+
+input[type="submit"] {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  align-self: center;
+}
+
+#googleMap iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+#visitUs ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* contact page styles end */

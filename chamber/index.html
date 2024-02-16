@@ -17,7 +17,7 @@
   </head>
   <body>
     <div id="banner" style="display: none">
-      🤝🏼 Come join us for Chamber of Commercer meet and greet Wednesday at 7:00 p.m.
+      🤝🏼 Come join us for Chamber of Commercer meet and greet friday at 7:00 p.m.
     </div>
     <header>
       <img src="images/logo.webp" alt="Logo" id="logo">
@@ -46,24 +46,41 @@
       </div>
       <div class="hero">
         <picture>
-          <source media="(max-width: 599px)" srcset="images/.jpg" />
-          <source media="(max-width: 899px)" srcset="images/.jpg" />
-          <source media="(min-width: 900px)" srcset="images/.jpg" />
-          <img src="images/wdd230-org.jpg" alt="Hero" />
+          <source media="(max-width: 599px)" srcset= "images/alcazar.webp" />
+          <source media="(max-width: 899px)" srcset= "images/alcazar.webp" />
+          <source media="(min-width: 900px)" srcset= "images/alcazar.webp" />
+          <img src= "images/alcazar.webp" alt="Hero" >
         </picture>
       </div>
-      <div class="join"><h2>Join</h2></div>
+      
+      <div class="join">
+        <a href="join.html"><h2>Join Now</h2></a>
+        <p>Join the chamber now and get a 25% discount on your first year membership</p>
+      </div>
 
-      <div class="weather"><h2>Weather</h2></div>
-      <div class="news"><h2>News Release</h2></div>
+      <div class="weather">
+        <h2>Weather</h2>
+        <p>The current temperature in Toledo, Spain is <span id="current-temp"></span> &deg;F</p> <!-- Added temperature value -->
+        <h3>Current Condition</h3>
+        <figure>
+          <img src="" alt="" id="weather-icon" >
+          <figcaption></figcaption>
+        </figure>
+      </div>
+      <div class="news">
+        <h2>News Release</h2>
+        <p>The Chamber of Commerce is pleased to announce the launch of our new website. The website
+          will be launched on July, 2024 after the review of brother Farnsworth. Please check back soon for more information.</p>
+  
+      </div>
       <div class="spotlight1">
-        <h2>Spotlight1</h2>
+        <a href="directory.html"><h2>Meet the members of the Chamber of Commerce</h2></a>
       </div>
       <div class="spotlight2">
-        <h2>Spotlight2</h2>
+        <h2>Chamber of Commerce: Your Partner for Success</h2>
       </div>
       <div class="spotlight3">
-        <h2>Spotlight3</h2>
+        <h2>Celebrating the Chamber of Commerce Achievers</h2>
       </div>
     </main>
     <footer>
@@ -77,5 +94,6 @@
       <p id="footerText"></p>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/weatherapi.js"></script>
   </body>
 </html>
