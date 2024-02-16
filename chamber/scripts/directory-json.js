@@ -1,4 +1,4 @@
-const url = 'https://raw.githubusercontent.com/LeydiH/wdd230/main/chamber/data/members.json'; // Path for online members.json file
+const url = ''; // Path for online members.json file
 
 // LOCAL JSON FOR TESTING: const url = 'members.json';
 
