@@ -1,4 +1,6 @@
-const url = ''; // Path for online members.json file
+const baseURL = "https://leydih.github.io/wdd130/";
+const linksURL = "https://leydih.github.io/wdd230/chamber/data/companies.json";
+
 
 // LOCAL JSON FOR TESTING: const url = 'members.json';
 
